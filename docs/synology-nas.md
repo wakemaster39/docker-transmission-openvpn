@@ -35,6 +35,7 @@ nameserver 8.8.8.8
 nameserver 8.8.4.4
 ```
 - Save the file with [escape] + `:wq!`
+- Check permission with `chmod 0755 resolv.conf`
 - Create your Docker container with the following command. Note the following things you should change or may want to consider changing:
   - If you'd like any Transmission options (for instance, stop seeding once a certain ratio has been reached) to persist across container restarts, now is the time to enter them by modifying the command below. See [here](https://haugene.github.io/docker-transmission-openvpn/arguments/#transmission_configuration_options) for details.
   - You must change the folder paths for the paths listed in the following command.
